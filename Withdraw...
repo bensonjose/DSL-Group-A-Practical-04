@@ -1,0 +1,16 @@
+balance=0
+while True:
+
+  a=input("operation and amount")
+  if not a :
+    break
+  values=a.split(",")
+  operation=values[0]
+  amount=int(values[1])
+  if operation=="D":
+    balance+=amount
+  elif operation=="W":
+    balance-=amount
+  else :
+    pass
+print(balance)
