@@ -14,10 +14,10 @@ list1=[]
 balance=0
 while True:
     data=input("Please enter the Transaction details:")
-    if ('Exit'==data):
+    if ('exit'==data):
         break
     list1.append(data.split())
-print(list1)
+#print(list1)
 
 for var in list1:
     if(var[0]=='D'):
@@ -25,4 +25,4 @@ for var in list1:
     elif (var[0]=='W'):
         withdrawal(int(var[1]))
 
-print("Balance=",balance)
+print("YOUR BALANCE IS---->>",balance)
